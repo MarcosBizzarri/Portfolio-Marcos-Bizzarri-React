@@ -1,31 +1,29 @@
-/* Estilos básicos aplicados a todas as telas */
 .geral {
     background-color: #000000;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
   }
-
- 
+  
+  .container {
+    text-align: center; /* Centraliza o texto abaixo da imagem */
+  }
   
   .imagem_perfil {
-    width: 170px; /* Tamanho padrão menor para telas pequenas */
+    width: 190px; /* Tamanho padrão menor para telas pequenas */
     height: auto; 
     display: block;
     margin: 0 auto; /* Centraliza a imagem horizontalmente */
-    margin-top: 90px; 
+    margin-top: 60px; 
     max-width: 100%;
     border-radius: 50%; 
   }
   
+  
   /* Estilos para telas maiores que 768px */
   @media (min-width: 768px) {
     .imagem_perfil {
-      width: 300px; /* Aumenta o tamanho da imagem em telas maiores */
-      margin-left: 1100px; /* Aplica margem esquerda apenas em telas maiores */
-      margin-bottom: 70px;
-      margin-top: 90px; 
-      
-      
-
+      width: 160px; /* Aumenta o tamanho da imagem em telas maiores */
+      margin-top: 40px; 
     }
-
   }
   
