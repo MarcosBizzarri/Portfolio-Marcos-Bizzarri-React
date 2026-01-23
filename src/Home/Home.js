@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import styles from './Home.module.css';
-import cv from  '../assets/cv/Marcos-Bizzarri.pdf';
+// import cv from  '../assets/cv/Marcos-Bizzarri.pdf';
 
 import aviao from '../assets/img/avioes.png';
 import trabalho from '../assets/img/trabalho-uninter-bizzarri.png';
-import perguntas from '../assets/img/perguntas.png';
+// import perguntas from '../assets/img/perguntas.png';
 import santander from '../assets/img/projeto-santander.png';
 import facebook from '../assets/img/facebook-insta.png';
-import academia from '../assets/img/academia-gestao.png';
-import quiz from '../assets/img/quiz.png';
-import crud from "../assets/img/cadastro.png";
+// import academia from '../assets/img/academia-gestao.png';
+// import quiz from '../assets/img/quiz.png';
+// import crud from "../assets/img/cadastro.png";
 import casorio from '../assets/img/casorio.png';
 import busca from '../assets/img/bsuca-restaurantes.png';
 
@@ -27,9 +27,9 @@ import video1 from '../assets/videos/sobre-marcos.mkv';
 import video2 from '../assets/videos/perguntas-js.mkv';
 import video3 from '../assets/videos/santander.mkv';
 import video4 from '../assets/videos/facebook-clone.mkv';
-import video5 from '../assets/videos/academia03.mkv';
-import video6 from '../assets/videos/quiz-educacional.mp4';
-import video7 from "../assets/videos/cadastro-crud.mp4";
+// import video5 from '../assets/videos/academia03.mkv';
+// import video6 from '../assets/videos/quiz-educacional.mp4';
+// import video7 from "../assets/videos/cadastro-crud.mp4";
 import video8 from "../assets/videos/casamento.mp4";
 import video9 from "../assets/videos/buscarestaurantes.mp4";
 
@@ -63,19 +63,19 @@ const Home = () => {
       <div className={styles.header}>
         <div className={styles.textContainer}>
           <h5 className={styles.titulo_um}>Olá, eu sou o</h5>
-          <span className={styles.titulo_dois}>Marcos Bizzarri :)</span>
+          <span className={styles.titulo_dois}>Marcos Bizzarri</span>
           <br />
-          <p className={styles.titulo_tres}>Desenvolvedor Web Full Stack em React e nodejs!</p>
-          <div className={`${styles.actions} mt-3`}>
+          <p className={styles.titulo_tres}>Desenvolvedor Frontend | React, Next.js & Tailwind</p>
+          {/* <div className={`${styles.actions} mt-3`}>
             <a href={cv} download className="btn btn-primary mr-2">Currículo</a>
             <a href="https://wa.me/5519994449107" target="_blank" rel="noopener noreferrer" className="btn btn-primary mr-2">Whatsapp</a>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className={styles.about}>
         <h2 className={styles.texto_um}>Sobre mim</h2>
         <p className={styles.texto}>
-        Sou desenvolvedor Full Stack com 2 anos de experiência, atuando com React no front-end e Node.js no back-end, especializado em criar interfaces web e mobile dinâmicas, escaláveis e acessíveis. Tenho sólida prática na construção de componentes reutilizáveis, gerenciamento de estado com Context API e Redux, além da integração e desenvolvimento de APIs RESTful com MySQL. Formado em Análise e Desenvolvimento de Sistemas, busco desenvolver soluções tecnológicas inovadoras que entreguem alta performance e uma excelente experiência ao usuário.
+          Sou desenvolvedor Front-end com foco em criar interfaces modernas, responsivas e performáticas. Atuo principalmente com React, Next.js e Tailwind CSS, buscando sempre código limpo, boa experiência do usuário e soluções escaláveis.
         </p>
       </div>
       <div className={styles.container_um}>
@@ -102,15 +102,15 @@ const Home = () => {
             <p className={styles.paragra}>Bootstrap</p>
           </div>
           <div className={styles.box}>
-            <img src={nextjs} alt="next" className={styles.img_html} />
+            <img src={nextIcon} alt="next" className={styles.img_html} />
             <p className={styles.paragra}>Nextjs</p>
           </div>
           <div className={styles.box}>
-            <img src={nodejs} alt="node" className={styles.img_html} />
+            <img src={nodeIcon} alt="node" className={styles.img_html} />
             <p className={styles.paragra}>Nodejs</p>
           </div>
           <div className={styles.box}>
-            <img src={tailwind} alt="tailwind" className={styles.img_html} />
+            <img src={tailwindIcon} alt="tailwind" className={styles.img_html} />
             <p className={styles.paragra}>Tailwind</p>
           </div>
           
@@ -193,8 +193,8 @@ const Home = () => {
               <img src={busca} alt="aviões" className={styles.imagem_aviao} />
               <div className={styles.overlay}>
                 <div className={styles.textoOverlay}>
-                  <img src={nextIcon} alt="overlay" className={styles.imageinter} />
-                  <img src={nodeIcon} alt="overlay" className={styles.imageinter} />
+                  <img src={nextjs} alt="overlay" className={styles.imageinter} />
+                  <img src={nodejs} alt="overlay" className={styles.imageinter} />
                   <img src={tailwind} alt="overlay" className={styles.imageinter} />
 
                 </div>
@@ -257,7 +257,7 @@ const Home = () => {
             )}
           </div>
 
-          <div className={styles.projeto}>
+          {/* <div className={styles.projeto}>
             <div className={styles.imagemContainer} onClick={() => handleImageClick('perguntas')}>
               <img src={perguntas} alt="aviões" className={styles.imagem_aviao} />
               <div className={styles.overlay}>
@@ -289,7 +289,7 @@ const Home = () => {
                 <button onClick={handleCloseVideo} className={styles.closeButton}>Fechar</button>
               </div>
             )}
-          </div>
+          </div> */}
 
           <div className={styles.projeto}>
             <div className={styles.imagemContainer} onClick={() => handleImageClick('santander')}>
@@ -353,7 +353,8 @@ const Home = () => {
               </div>
             )}
           </div>
-          <div className={styles.projeto}>
+          
+          {/* <div className={styles.projeto}>
             <div className={styles.imagemContainer} onClick={() => handleImageClick('academia')}>
               <img src={academia} alt="aviões" className={styles.imagem_aviao} />
               <div className={styles.overlay}>
@@ -383,8 +384,8 @@ const Home = () => {
                 <button onClick={handleCloseVideo} className={styles.closeButton}>Fechar</button>
               </div>
             )}
-          </div>
-
+          </div> */}
+{/* 
           <div className={styles.projeto}>
             <div className={styles.imagemContainer} onClick={() => handleImageClick('quizeducacional')}>
               <img src={quiz} alt="aviões" className={styles.imagem_aviao} />
@@ -418,9 +419,9 @@ const Home = () => {
                 <button onClick={handleCloseVideo} className={styles.closeButton}>Fechar</button>
               </div>
             )}
-          </div>
+          </div> */}
 
-          <div className={styles.projeto}>
+          {/* <div className={styles.projeto}>
             <div className={styles.imagemContainer} onClick={() => handleImageClick('crud')}>
               <img src={crud} alt="aviões" className={styles.imagem_aviao} />
               <div className={styles.overlay}>
@@ -453,7 +454,7 @@ const Home = () => {
                 <button onClick={handleCloseVideo} className={styles.closeButton}>Fechar</button>
               </div>
             )}
-          </div>
+          </div> */}
         </div>
       </div>
 
