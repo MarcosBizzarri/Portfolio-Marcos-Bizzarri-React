@@ -4,11 +4,11 @@ import styles from './Home.module.css';
 
 import aviao from '../assets/img/avioes.png';
 import trabalho from '../assets/img/trabalho-uninter-bizzarri.png';
-// import perguntas from '../assets/img/perguntas.png';
+import perguntas from '../assets/img/perguntas.png';
 import santander from '../assets/img/projeto-santander.png';
 import facebook from '../assets/img/facebook-insta.png';
-// import academia from '../assets/img/academia-gestao.png';
-// import quiz from '../assets/img/quiz.png';
+import academia from '../assets/img/academia-gestao.png';
+import quiz from '../assets/img/quiz.png';
 // import crud from "../assets/img/cadastro.png";
 import casorio from '../assets/img/casorio.png';
 import busca from '../assets/img/bsuca-restaurantes.png';
@@ -24,11 +24,11 @@ import tailwindIcon from '../assets/languages/tailwind.png';
 
 import video from '../assets/videos/bizzarriflights.mkv';
 import video1 from '../assets/videos/sobre-marcos.mkv';
-import video2 from '../assets/videos/perguntas-js.mkv';
+import video2 from '../assets/videos/perguntas-js.mp4';
 import video3 from '../assets/videos/santander.mkv';
 import video4 from '../assets/videos/facebook-clone.mkv';
-// import video5 from '../assets/videos/academia03.mkv';
-// import video6 from '../assets/videos/quiz-educacional.mp4';
+import video5 from '../assets/videos/academia-gestao.mp4';
+import video6 from '../assets/videos/quiz-educacional.mp4';
 // import video7 from "../assets/videos/cadastro-crud.mp4";
 import video8 from "../assets/videos/casamento.mp4";
 import video9 from "../assets/videos/buscarestaurantes.mp4";
@@ -257,7 +257,7 @@ const Home = () => {
             )}
           </div>
 
-          {/* <div className={styles.projeto}>
+          <div className={styles.projeto}>
             <div className={styles.imagemContainer} onClick={() => handleImageClick('perguntas')}>
               <img src={perguntas} alt="aviões" className={styles.imagem_aviao} />
               <div className={styles.overlay}>
@@ -289,7 +289,7 @@ const Home = () => {
                 <button onClick={handleCloseVideo} className={styles.closeButton}>Fechar</button>
               </div>
             )}
-          </div> */}
+          </div>
 
           <div className={styles.projeto}>
             <div className={styles.imagemContainer} onClick={() => handleImageClick('santander')}>
@@ -354,7 +354,7 @@ const Home = () => {
             )}
           </div>
           
-          {/* <div className={styles.projeto}>
+          <div className={styles.projeto}>
             <div className={styles.imagemContainer} onClick={() => handleImageClick('academia')}>
               <img src={academia} alt="aviões" className={styles.imagem_aviao} />
               <div className={styles.overlay}>
@@ -384,8 +384,8 @@ const Home = () => {
                 <button onClick={handleCloseVideo} className={styles.closeButton}>Fechar</button>
               </div>
             )}
-          </div> */}
-{/* 
+          </div>
+
           <div className={styles.projeto}>
             <div className={styles.imagemContainer} onClick={() => handleImageClick('quizeducacional')}>
               <img src={quiz} alt="aviões" className={styles.imagem_aviao} />
@@ -419,7 +419,7 @@ const Home = () => {
                 <button onClick={handleCloseVideo} className={styles.closeButton}>Fechar</button>
               </div>
             )}
-          </div> */}
+          </div>
 
           {/* <div className={styles.projeto}>
             <div className={styles.imagemContainer} onClick={() => handleImageClick('crud')}>
