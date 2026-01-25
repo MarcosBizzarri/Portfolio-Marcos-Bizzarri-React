@@ -906,7 +906,7 @@ const Home = () => {
 
       <div className={styles.footer}>
           <footer>
-          © 2026 • Marcos Bizzarri — Todos os direitos reservados
+          © 2026 • Marcos Bizzarri
         
     </footer>
       </div>
