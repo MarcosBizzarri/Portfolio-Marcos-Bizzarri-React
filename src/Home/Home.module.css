@@ -13,6 +13,12 @@ html, body {
   margin-bottom: 10px;
 }
 
+  .footer {
+  color: #228bfb;
+  padding: 16px;
+  margin-top: 30px;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -35,6 +41,22 @@ html, body {
   text-align: center;
   margin-left: 0;
 }
+
+.seta {
+  
+  right: 20px; 
+  bottom: 20px;
+  z-index: 1000;
+    margin-top: 40px;
+}
+
+.seta button {
+  background: none;
+  border: none;
+  font-size: 46px;
+  color: #0f41e2;
+}
+
 
 .titulo_um {
   font-size: 40px;
@@ -608,4 +630,11 @@ html, body {
   .closeButton {
     width: 100%;
   }
+
+  .footer {
+  color: #228bfb;
+  padding: 16px;
+  margin-top: 30px;
+}
+
 }

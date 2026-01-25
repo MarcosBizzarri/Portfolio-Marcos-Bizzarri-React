@@ -58,6 +58,15 @@ const Home = () => {
     setSelectedProject(null);
   };
 
+  
+    const voltarTopo = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      })
+    }
+  
+
   return (
     <div className={styles.container}>
       <div className={styles.header}>
@@ -893,6 +902,21 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className={styles.footer}>
+          <footer>
+          © 2026 • Marcos Bizzarri — Todos os direitos reservados
+        
+    </footer>
+      </div>
+
+      <div className={styles.seta}>
+        <button onClick={voltarTopo}>
+           ↑
+
+          <span className="tooltip">Subir ao topo</span>
+        </button>
       </div>
     </div>
   );
