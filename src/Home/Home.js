@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styles from "./Home.module.css";
 import cv from  '../assets/cv/developer-marcos.pdf';
 
@@ -12,6 +12,8 @@ import quiz from "../assets/img/quiz.png";
 import crud from "../assets/img/cadastro.png";
 import casorio from "../assets/img/casorio.png";
 import busca from "../assets/img/bsuca-restaurantes.png";
+import treino from "../assets/img/treinos.png"
+import controle from "../assets/img/controle.png"
 
 import htmlIcon from "../assets/languages/html.svg";
 import cssIcon from "../assets/languages/css.svg";
@@ -32,6 +34,8 @@ import video6 from "../assets/videos/quiz-educacional.mp4";
 import video7 from "../assets/videos/cadastro-crud.mp4";
 import video8 from "../assets/videos/casamento.mp4";
 import video9 from "../assets/videos/buscarestaurantes.mp4";
+import video10 from "../assets/videos/treino.mp4"
+import video11 from "../assets/videos/controlefinanceiro.mp4"
 
 import react from "../assets/languages/react.svg";
 import html5 from "../assets/languages/html.svg";
@@ -141,6 +145,121 @@ const Home = () => {
         <h1 className={styles.titulo_projeto}>Projetos</h1>
 
         <div className={styles.gridContainer}>
+
+          <div className={styles.projeto}>
+            <div
+              className={styles.imagemContainer}
+              onClick={() => handleImageClick("treinodiario")}
+            >
+              <img src={treino} alt="aviões" className={styles.imagem_aviao} />
+              <div className={styles.overlay}>
+                <div className={styles.textoOverlay}>
+                  <img
+                    src={nextjs}
+                    alt="overlay"
+                    className={styles.imageinter}
+                  />
+                  
+                  <img src={tailwind} alt="overlay" className={styles.imageinter} />
+                </div>
+              </div>
+            </div>
+            <h2 className={styles.titulo_projeto_texto}>
+              Projeto Treinos diários
+            </h2>
+            {selectedProject === "treinodiario" && (
+              <div className={styles.videoContainer}>
+                <video className={styles.video} controls>
+                  <source src={video10} type="video/mp4" />
+                  Seu navegador não suporta o elemento de vídeo.
+                </video>
+                <div className={styles.links}>
+                  <a
+                    href="https://training-evolution.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-primary mr-2"
+                  >
+                    Ver Projeto
+                  </a>
+                  <br />
+                  <br />
+                  <br />
+                  <p className={styles.paragrafo_projeto}>
+                    {" "}
+                    O projeto{" "}
+                    <strong className={styles.color}>Treinos diários</strong>
+                    <br />
+                    é uma aplicação web desenvolvida em React.
+                    <br />
+                  </p>
+                </div>
+                <button
+                  onClick={handleCloseVideo}
+                  className={styles.closeButton}
+                >
+                  Fechar
+                </button>
+              </div>
+            )}
+          </div>
+
+          <div className={styles.projeto}>
+            <div
+              className={styles.imagemContainer}
+              onClick={() => handleImageClick("controle")}
+            >
+              <img src={controle} alt="aviões" className={styles.imagem_aviao} />
+              <div className={styles.overlay}>
+                <div className={styles.textoOverlay}>
+                  <img
+                    src={nextjs}
+                    alt="overlay"
+                    className={styles.imageinter}
+                  />
+                  <img src={tailwind} alt="overlay" className={styles.imageinter} />
+                </div>
+              </div>
+            </div>
+            <h2 className={styles.titulo_projeto_texto}>
+              Projeto Controle financeiro
+            </h2>
+            {selectedProject === "controle" && (
+              <div className={styles.videoContainer}>
+                <video className={styles.video} controls>
+                  <source src={video11} type="video/mp4" />
+                  Seu navegador não suporta o elemento de vídeo.
+                </video>
+                <div className={styles.links}>
+                  <a
+                    href="https://controle-financeiro-ten-alpha.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-primary mr-2"
+                  >
+                    Ver Projeto
+                  </a>
+                  <br />
+                  <br />
+                  <br />
+                  <p className={styles.paragrafo_projeto}>
+                    {" "}
+                    O projeto{" "}
+                    <strong className={styles.color}>Controle Financeiro</strong>
+                    <br />
+                    é uma aplicação web desenvolvida em React.
+                    <br />
+                  </p>
+                </div>
+                <button
+                  onClick={handleCloseVideo}
+                  className={styles.closeButton}
+                >
+                  Fechar
+                </button>
+              </div>
+            )}
+          </div>
           <div className={styles.projeto}>
             <div
               className={styles.imagemContainer}
